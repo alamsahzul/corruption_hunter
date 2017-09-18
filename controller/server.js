@@ -5,6 +5,11 @@ const app         = express();
 // deklarasi path
 const path        = require('path');
 
+// deklarasi lokasi css/js/img dll
+app.use(express.static(path.join(__dirname,'../public')));
+
+console.log((path.join(__dirname,'../public/css/custom.css')));
+
 // deklarasi lokasi view
 app.set('views', path.join(__dirname, '../view'));
 //deklarasi engine default
@@ -21,4 +26,32 @@ app.listen(3000, function()
 
 app.get('/', function(req, res){
   res.render('index', {title:"Corruption Hunter"});
+});
+
+app.get('/about', function(req, res){
+  res.render('about', {title:"Corruption Hunter"});
+});
+app.get('/regulation', function(req, res){
+  res.render('regulation', {title:"Corruption Hunter"});
+});
+app.get('/help', function(req, res){
+  res.render('help', {title:"Corruption Hunter"});
+});
+app.get('/map', function(req, res){
+  res.render('map', {title:"Corruption Hunter"});
+});
+app.get('/signin', function(req, res){
+  res.render('signin', {title:"Corruption Hunter"});
+});
+app.get('/faq', function(req, res){
+  res.render('faq', {title:"Corruption Hunter"});
+});
+
+
+// Menu admin
+app.get('/admin', function(req, res){
+  res.render('admin/index', {title:"Corruption Hunter"});
+});
+app.get('/admin/faq', function(req, res){
+  res.render('admin/faq', {title:"Corruption Hunter"});
 });

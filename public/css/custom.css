@@ -1,0 +1,20 @@
+html, body{
+  height: 100%;
+}
+
+#header{
+  height: 150px;
+}
+
+#nav{
+  height: 100px;
+}
+
+#content{
+  height: 350px;
+  background-color: black;
+}
+
+#footer{
+  height: 50px;
+}
