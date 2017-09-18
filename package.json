@@ -1,0 +1,23 @@
+{
+  "name": "corruption_hunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alamsahzul/corruption_hunter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alamsahzul/corruption_hunter/issues"
+  },
+  "homepage": "https://github.com/alamsahzul/corruption_hunter#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemon": "^1.12.1"
+  }
+}
