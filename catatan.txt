@@ -1,0 +1,28 @@
+=>  General (RADIAN)
+    Page Sign Up & Sign in
+    Page Home
+      -> Peta
+      -> News
+    Page Regulation
+    Page About Us & Contact
+    Page Help
+    Lupa Password
+
+=>  Admin Desa (Zul)
+    Page Form CRUD data Progja & LPJ
+    CRUD Kepala Desa
+
+=>  Admin Bupati (Markus)
+    Page form CRUD data daerah
+      -> kabupaten
+      -> kecamatan
+      -> desa
+    CRUD Admin Desa
+
+=>  Bupati or Staff (Mikha)
+    Notification & Page Report
+    response
+
+=>  Log in (Mikha)
+    Report
+    CRUD profil

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alamsahzul/corruption_hunter#readme",
   "dependencies": {
+    "body-parser": "^1.18.1",
     "express": "^4.15.4",
     "nodemon": "^1.12.1"
   }

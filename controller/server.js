@@ -48,10 +48,34 @@ app.get('/faq', function(req, res){
 });
 
 
-// Menu admin
+// Pilih role berdasarkan hasil login, apakah sebagai member, admin kabupaten ataupun admin desa
+app.post('/signin', function(req, res){
+
+  let role = req.body.parser;
+
+  if (role == 'kab'){
+    res.render('admin/kab/index', {title:"Kab Page"});
+  }
+  else if(role == 'desa' ) {
+    res.render('admin/desa/index', {title:"Desa Page"});
+  }
+  else if (role == 'member'){
+    res.render('admin/index', {title:"Member Page"});
+  }
+
+});
+
+// halaman utama admin kabupaten
+app.get('/admin/kab', function(req, res){
+  res.render('admin/kab/index', {title:"Corruption Hunter"});
+});
+
+// halaman utama admin desa
+app.get('/admin/desa', function(req, res){
+  res.render('admin/desa/index', {title:"Corruption Hunter"});
+});
+
+// halaman utama member
 app.get('/admin', function(req, res){
   res.render('admin/index', {title:"Corruption Hunter"});
-});
-app.get('/admin/faq', function(req, res){
-  res.render('admin/faq', {title:"Corruption Hunter"});
 });
