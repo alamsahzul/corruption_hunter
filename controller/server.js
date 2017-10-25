@@ -36,7 +36,7 @@ app.get('/regulation', function(req, res){
 });
 app.get('/help', function(req, res){
   res.render('help', {title:"Corruption Hunter"});
-});
+}); 
 app.get('/map', function(req, res){
   res.render('map', {title:"Corruption Hunter"});
 });
