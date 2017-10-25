@@ -3,7 +3,7 @@ const express     = require('express');
 //menginstansiasi modul exprres
 const app         = express();
 // deklarasi path
-const path        = require('path');
+const path        = require('path'); 
 
 // deklarasi lokasi css/js/img dll
 app.use(express.static(path.join(__dirname,'../public')));
